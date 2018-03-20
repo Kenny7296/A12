@@ -13,7 +13,7 @@ body {
     width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
-    background: #fffded;
+    background-color: #fffded;
 }
 
 /* styling for celebratory year */
@@ -22,17 +22,18 @@ body {
     text-shadow: 2px 2px 2px #800000;
 }
 
+/* styling for links */
+
+a:focus a:hover {
+    font-style: italic;
+}
+
 /* styling for the header */
 
 header {
-    border-bottom: 3px solid #931420;
     padding: 1.5em 0 2em 0;
+    border-bottom: 3px solid #931420;
     background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-}
-
-header img {
-    float: left;
-    padding: 0 30px;
 }
 
 header h2 {
@@ -45,7 +46,12 @@ header h3 {
     font-style: italic;
 }
 
-/* styling for the main */
+header img {
+    float: left;
+    padding: 0 30px;
+}
+
+/* styling for the main content */
 
 main {
     clear: left;
@@ -57,8 +63,15 @@ section {
     padding: 0 20px 20px 20px;
 }
 
+section h1 {
+    color: #800000;
+    font-size: 150%;
+    padding-top: .5em;
+    margin: 0;
+}
+
 section p {
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
 }
 
 section blockquote {
@@ -71,22 +84,27 @@ section ul {
 }
 
 section li {
-    padding-bottom: 0.35em;
+    padding-bottom: .35em;
 }
 
-section h1 {
-    font-size: 150%;
-    padding: .5em 0 .25em 0;
-    margin: 0
+/* styling for the article */
+
+article {
+    padding: .5em 0;
 }
 
-section h2 {
-    font-size: 130%;
-    color: #800000;
-    padding: .5em 0 .25em 0;
+article h2 {
+    font-size: 115%;
+    padding: 0 0 .25em 0;
 }
 
-/* styling for main sections */
+article img {
+    float: right;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
+}
+
+/* styling for the aside */
 
 aside {
     width: 215px;
@@ -102,50 +120,22 @@ aside h2 {
 
 aside h3 {
     font-size: 105%;
-    padding-bottom: 0.25em;
+    padding-bottom: .25em;
 }
 
 aside img {
     padding-bottom: 1em;
 }
 
-article {
-    padding: 0.5em 0;
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
-}
-
-article img {
-    float: right;
-    margin: 0.5em 0 1em 1em;
-    border: 1px solid black;
-}
-
-article h2 {
-    padding-top: 0;
-}
-
-article h3 {
-    font-size: 105%;
-    padding-bottom: 0.25em;
-}
-
-/* styling for links */
-
-a:focus a:hover {
-    font-style: italic;
-}
-
 /* styling for the footer */
 
 footer {
-    clear: both;
-    text-align: center;
     background-color: #931420;
-}
+    clear: both;
 
+}
 footer p {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    text-align: center;
     color: white;
+    padding: 1em 0;
 }
